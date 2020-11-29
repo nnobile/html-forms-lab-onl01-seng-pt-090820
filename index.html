@@ -11,38 +11,55 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form action="http://example.com/process-user.php" method="POST">
+    <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
+    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+    <input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)">
+    <input type="message" id="message" name="message" placeholder="Enter Message">
+    </form>
 
       <!-- Add a label for 'fullname'-->
 
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
+      <label for="fullname">Enter Name</label>
+      <input id="fullname" type="text" name="fullname" placeholder="fullname">
 
 
       <!-- Add a label for 'email'-->
 
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
+      <label for="email">Enter Email</label>
+      <input id="email" type="email" name="email" placeholder="email">
 
 
       <!-- Add a label for 'phone'-->
 
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
+      <label for="phone">Enter Telephone (optional)</label>
+      <input id="tel" type="tel" name="phone" placeholder="Phone Number">
 
 
       <!-- Add a label for 'message'-->
-
+      <label for="message">Enter Message</label>
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
+      <h3>Enter Message</h3>
+      <textarea id= "message" name="message" placeholder="Enter Message"></textarea>
 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
+      <h3>What bourough are you most interestred in?</h3>
+      <input type="checkbox" name="Manhattan" value="Manhattan"> Manhattan <br>
+      <input type="checkbox" name="Queens" value="Queens"> Queens <br>
+      <input type="checkbox" name="Brooklyn" value="Brooklyn"> Brooklyn <br>
+      <input type="checkbox" name="The Bronx" value="The Bronx"> The Bronx <br>
+      <input type="checkbox" name="Staten Island" value="Staten Island"> Staten Island <br>
 
       <!-- Add an input with the type set to 'submit' -->
-
+      <input type="submit" value="submit">
     
   </body>
 </html>
